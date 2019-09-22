@@ -1,22 +1,54 @@
 package com.lawliet.io;
 
 import java.io.*;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipOutputStream;
+import java.util.zip.*;
 
+/**
+ * @author lawliet.L
+ */
 public class ZipIoTest {
 
     public static void main(String[] args) throws IOException {
-        zip("hello.zip",new File("E:\\projects\\idea_work\\Java\\basic"));
+        zip("hello.zip",new File("C:\\Users\\没有牙\\Desktop\\联众识别-易语言-HTTP-实例"));
+//        unzip("hello.zip");
     }
 
     private static void zip(String filename, File file) throws IOException {
+        System.out.println("压缩中...");
         ZipOutputStream zipOutputStream = new ZipOutputStream(new FileOutputStream(filename));
         executeZip(zipOutputStream,file,"");
-        System.out.println("压缩中...");
         zipOutputStream.close();
+        System.out.println("压缩完成...");
     }
 
+    private static void unzip(String filename) {
+        File file = new File(filename);
+        ZipInputStream zipInputStream;
+        try {
+            ZipFile zipFile = new ZipFile(file);
+            zipInputStream = new ZipInputStream(new FileInputStream(file));
+            ZipEntry zipEntry = zipInputStream.getNextEntry();
+            while ((zipEntry = zipInputStream.getNextEntry()) != null) {
+                File tmp = new File(zipEntry.getName());
+                if (!tmp.exists()) {
+                    tmp.getParentFile().mkdirs();
+                    FileOutputStream outputStream = new FileOutputStream(tmp);
+                    InputStream inputStream = zipFile.getInputStream(zipEntry);
+                    int count = 0;
+                    while ((count = inputStream.read()) != -1) {
+                        outputStream.write(count);
+                    }
+                    outputStream.close();
+                    inputStream.close();
+                }
+                zipInputStream.closeEntry();
+                System.out.println(zipEntry.getName());
+            }
+            zipInputStream.closeEntry();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     private static void executeZip(ZipOutputStream out, File f, String base) throws IOException {
         if (f.isDirectory()) {
             File[] fileList = f.listFiles();
