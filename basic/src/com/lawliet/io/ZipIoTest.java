@@ -9,7 +9,7 @@ import java.util.zip.*;
 public class ZipIoTest {
 
     public static void main(String[] args) throws IOException {
-        zip("hello.zip",new File("C:\\Users\\没有牙\\Desktop\\联众识别-易语言-HTTP-实例"));
+        zip("hello.zip",new File("basic"));
 //        unzip("hello.zip");
     }
 
@@ -56,7 +56,7 @@ public class ZipIoTest {
                 out.putNextEntry(new ZipEntry(base + "/"));
             }
             for (File file : fileList) {
-                executeZip(out,file,base + file);
+                executeZip(out,file,base + "/" + file);
             }
         } else {
             out.putNextEntry(new ZipEntry(base));
