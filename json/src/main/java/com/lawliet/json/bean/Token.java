@@ -1,0 +1,26 @@
+package com.lawliet.json.bean;
+
+/**
+ * @author lawliet.L
+ */
+public class Token {
+
+    private TokenType tokenType;
+    private String value;
+
+    public TokenType getTokenType() {
+        return tokenType;
+    }
+
+    public void setTokenType(TokenType tokenType) {
+        this.tokenType = tokenType;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+}
