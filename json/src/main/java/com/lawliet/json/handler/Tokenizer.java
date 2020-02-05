@@ -65,6 +65,9 @@ public class Tokenizer {
                 return readBoolean();
             case '-':
                 return readNumber();
+            default:
+                System.out.println(ch + " 是一个奇怪的字符");
+                break;
         }
 
         if (isDigit(ch)) {
@@ -72,6 +75,14 @@ public class Tokenizer {
         }
 
         throw new JsonParseException("非法字符");
+    }
+
+    private Token readNumber() {
+        return null;
+    }
+
+    private Token readBoolean() {
+        return null;
     }
 
     private Token readString() throws IOException {
