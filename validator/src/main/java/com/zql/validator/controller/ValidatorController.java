@@ -24,7 +24,7 @@ public class ValidatorController {
     public User login(@Valid User user, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             FieldError error = bindingResult.getFieldError();
-            System.out.println(error.getField() + "\t" + error.getDefaultMessage());
+            System.out.println(error.getField() + " " + error.getDefaultMessage());
             return null;
         }
         return user;
@@ -37,6 +37,6 @@ public class ValidatorController {
 
     @GetMapping("/username")
     public Result<User> getByUsername(@NotNull(message = "用户名不能为空") String username) {
-        return Result.success(new User(1L, username, "123@11.com"));
+        return Result.success(new User(1L, username, "123" ,"123@11.com"));
     }
 }

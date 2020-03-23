@@ -1,5 +1,6 @@
 package com.zql.validator.entity;
 
+import com.zql.validator.validator.CheckPasswordLen;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,6 +22,9 @@ public class User {
 
     @NotEmpty(message = "用户名不能为空")
     private String username;
+
+    @CheckPasswordLen
+    private String password;
 
     @Email(message = "邮件格式不合法")
     @NotEmpty(message = "email不能为空")

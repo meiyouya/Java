@@ -25,21 +25,21 @@ public class GlobalExceptionHandler {
             MethodArgumentNotValidException methodArgumentNotValidException = (MethodArgumentNotValidException) e;
             StringBuilder sb = new StringBuilder();
             methodArgumentNotValidException.getBindingResult().getAllErrors().forEach(error -> {
-                sb.append(error.getDefaultMessage()).append("\n");
+                sb.append(error.getDefaultMessage()).append(" ");
             });
             return new Result(403, sb.toString(), null);
         } else if (e instanceof BindException) {    // 放在url和表单中的数据触发这个异常
             BindException bindException = (BindException) e;
             StringBuilder sb = new StringBuilder();
             bindException.getBindingResult().getAllErrors().forEach(error -> {
-                sb.append(error.getDefaultMessage()).append(System.lineSeparator());
+                sb.append(error.getDefaultMessage()).append(" ");
             });
             return new Result(403, sb.toString(), null);
         } else if (e instanceof ConstraintViolationException) {    // 单参数校验触发这个异常
             ConstraintViolationException constraintViolationException = (ConstraintViolationException) e;
             StringBuilder sb = new StringBuilder();
             constraintViolationException.getConstraintViolations().forEach(a -> {
-                sb.append(a.getMessage()).append(System.lineSeparator());
+                sb.append(a.getMessage()).append(" ");
             });
             return new Result(403, sb.toString(), null);
         }
