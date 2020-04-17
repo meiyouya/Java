@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<person id="3" >
+    <name>李四</name>
+    <age>23</age>
+    <address id="5">
+        <province>山旮旯省</province>
+        <city>山旮旯市</city>
+        <area>山旮旯区</area>
+    </address>
+</person>
