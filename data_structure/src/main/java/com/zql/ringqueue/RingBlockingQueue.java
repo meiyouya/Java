@@ -12,7 +12,104 @@ public class RingBlockingQueue<E> extends RingQueue<E> {
      */
     protected final ReentrantLock putLock = new ReentrantLock();
 
-    interface QueueListener<E> {
+    private QueueListener queueListener;
 
+    public RingBlockingQueue() {
+        super();
+    }
+
+    public RingBlockingQueue(QueueListener queueListener) {
+        super();
+        this.queueListener = queueListener;
+    }
+
+    public void setQueueListener(QueueListener queueListener) {
+        this.queueListener = queueListener;
+    }
+
+    @Override
+    public boolean add(E e) {
+        final ReentrantLock putLock = this.putLock;
+        try {
+            putLock.lockInterruptibly();
+            super.add(e);
+
+            if (queueListener != null) {
+                queueListener.afterAdd(e);
+            }
+            return true;
+        } catch (InterruptedException interruptedException) {
+            interruptedException.printStackTrace();
+            return false;
+        } finally {
+            putLock.unlock();
+        }
+    }
+
+    /**
+     * 返回当前指向的元素，并把指针指向下一个元素
+     *
+     * @return 当前元素
+     */
+    @Override
+    public E next() {
+        final ReentrantLock putLock = this.putLock;
+        try {
+            putLock.lockInterruptibly();
+            return super.next();
+        } catch (InterruptedException interruptedException) {
+            interruptedException.printStackTrace();
+            return null;
+        } finally {
+            putLock.unlock();
+        }
+    }
+
+    /**
+     * 返回当前指向的元素，并把指针指向上一个元素
+     *
+     * @return 当前元素
+     */
+    @Override
+    public E prev() {
+        final ReentrantLock putLock = this.putLock;
+        try {
+            putLock.lockInterruptibly();
+            return super.prev();
+        } catch (InterruptedException interruptedException) {
+            interruptedException.printStackTrace();
+            return null;
+        } finally {
+            putLock.unlock();
+        }
+    }
+
+    /**
+     * 删除环形队列中的指定元素
+     *
+     * @param e 要删除的元素
+     * @return 删除结果
+     */
+    @Override
+    public boolean remove(E e) {
+        final ReentrantLock putLock = this.putLock;
+        try {
+            putLock.lockInterruptibly();
+
+            if (queueListener != null) {
+                queueListener.afterRemove(e);
+            }
+            return super.remove(e);
+        } catch (InterruptedException interruptedException) {
+            interruptedException.printStackTrace();
+            return false;
+        } finally {
+            putLock.unlock();
+        }
+    }
+
+    interface QueueListener<E> {
+        void afterAdd(E e);
+        void afterRemove(E e);
     }
 }
