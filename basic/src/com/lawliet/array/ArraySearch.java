@@ -1,7 +1,10 @@
-package com.zql.array;
+package com.lawliet.array;
 
 import java.util.Arrays;
 
+/**
+ * @author dell
+ */
 public class ArraySearch {
 
     public static void main(String[] args) {
