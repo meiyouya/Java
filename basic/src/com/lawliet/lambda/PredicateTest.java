@@ -21,6 +21,9 @@ public class PredicateTest {
         printNum(list, n -> true);
         printNum(list, n -> n % 2 == 0);
         printNum(list, n -> n > 4);
+
+        Predicate<Integer> intListPredicate = num -> num < 3;
+        list.stream().filter(intListPredicate).forEach(System.out::println);
     }
 
     private static void printNum(List<Integer> list, Predicate<Integer> predicate) {

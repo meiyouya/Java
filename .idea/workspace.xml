@@ -1,53 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b126007-55df-4319-80a5-dc3605267a8d" name="Default Changelist" comment="ring block queue">
-      <change afterPath="$PROJECT_DIR$/basic/basic1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="7b126007-55df-4319-80a5-dc3605267a8d" name="Default Changelist" comment="custom binary search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/src/com/lawliet/array/ArraySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic/src/com/lawliet/array/ArraySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/src/com/lawliet/lambda/PredicateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic/src/com/lawliet/lambda/PredicateTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -98,13 +55,13 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.ArraySearch">
-    <configuration name="ArraySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lawliet.array.ArraySearch" />
+  <component name="RunManager" selected="Application.PredicateTest">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawliet.sort.BubbleSort" />
       <module name="basic1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lawliet.array.*" />
+          <option name="PATTERN" value="com.lawliet.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DelayedQueueTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zql.delayedqueue.DelayedQueueTest" />
-      <module name="data_structure" />
+    <configuration name="MathOperationLambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawliet.lambda.MathOperationLambda" />
+      <module name="basic1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zql.delayedqueue.*" />
+          <option name="PATTERN" value="com.lawliet.lambda.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,12 +82,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringCompare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lawliet.string.StringCompare" />
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawliet.sort.MergeSort" />
       <module name="basic1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lawliet.string.*" />
+          <option name="PATTERN" value="com.lawliet.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PredicateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawliet.lambda.PredicateTest" />
+      <module name="basic1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lawliet.lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lawliet.sort.QuickSort" />
+      <module name="basic1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lawliet.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,15 +122,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DelayedQueueTest" />
-      <item itemvalue="Application.StringCompare" />
-      <item itemvalue="Application.ArraySearch" />
+      <item itemvalue="Application.BubbleSort" />
+      <item itemvalue="Application.MergeSort" />
+      <item itemvalue="Application.QuickSort" />
+      <item itemvalue="Application.MathOperationLambda" />
+      <item itemvalue="Application.PredicateTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ArraySearch" />
-        <item itemvalue="Application.StringCompare" />
-        <item itemvalue="Application.DelayedQueueTest" />
+        <item itemvalue="Application.PredicateTest" />
+        <item itemvalue="Application.MathOperationLambda" />
+        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.BubbleSort" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +155,8 @@
       <workItem from="1591353004109" duration="846000" />
       <workItem from="1591440341022" duration="35000" />
       <workItem from="1591440379975" duration="1924000" />
-      <workItem from="1591512950388" duration="2252000" />
+      <workItem from="1591512950388" duration="2334000" />
+      <workItem from="1592294639181" duration="9699000" />
     </task>
     <task id="LOCAL-00001" summary="ring queue">
       <created>1591267867185</created>
@@ -205,7 +193,35 @@
       <option name="project" value="LOCAL" />
       <updated>1591516030422</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="custom binary search">
+      <created>1591516539148</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591516539148</updated>
+    </task>
+    <task id="LOCAL-00007" summary="sort">
+      <created>1592299671696</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592299671696</updated>
+    </task>
+    <task id="LOCAL-00008" summary="lambda">
+      <created>1592302638781</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1592302638781</updated>
+    </task>
+    <task id="LOCAL-00009" summary="predicate">
+      <created>1592305675622</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1592305675622</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +233,11 @@
     <MESSAGE value="delayed queue" />
     <MESSAGE value="char sequence compare" />
     <MESSAGE value="modify package" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify package" />
+    <MESSAGE value="custom binary search" />
+    <MESSAGE value="sort" />
+    <MESSAGE value="lambda" />
+    <MESSAGE value="predicate" />
+    <option name="LAST_COMMIT_MESSAGE" value="predicate" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591513425627">
@@ -228,10 +248,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591329511608" />
-    <state x="461" y="0" key="CommitChangelistDialog2" timestamp="1591516028946">
+    <state x="461" y="0" key="CommitChangelistDialog2" timestamp="1592305674692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591516028946" />
+    <state x="461" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592305674692" />
     <state width="468" height="646" key="DebuggerActiveHint" timestamp="1591334920943">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -240,22 +260,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="209" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591440453589" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1591516468882">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1592305797320">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591516468882" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1591516468882">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592305797320" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1592305797320">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591516468882" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1591516468882">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592305797320" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1592305797320">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591516468882" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1591516468882">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592305797320" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1592305797320">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591516468882" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592305797320" />
     <state width="1877" height="216" key="GridCell.Tab.1.bottom" timestamp="1591443973525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -276,14 +296,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="600" y="137" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1591440472351" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1591512987375">
+    <state x="461" y="164" key="SettingsEditor" timestamp="1592298102091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591512987375" />
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1591516033504">
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592298102091" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1592302655463">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591516033504" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592302655463" />
     <state x="752" y="429" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591516006880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
