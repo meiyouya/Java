@@ -1,10 +1,6 @@
 package com.lawliet.socket;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.net.ServerSocket;
-import java.net.Socket;
 
 /**
  * @author dell
@@ -12,7 +8,7 @@ import java.net.Socket;
 public class Server {
 
     public static void main(String[] args) {
-        try {
+        /*try {
             ServerSocket serverSocket = new ServerSocket(1234);
             Socket client = serverSocket.accept();
             PrintWriter out = new PrintWriter(client.getOutputStream(), true);
@@ -24,6 +20,17 @@ public class Server {
                 out.println("你好，" + userIn.replace("您好，我叫", "") + " 欢迎您");
             }
         } catch (Exception e) {
+            e.printStackTrace();
+        }*/
+
+        // 定义可接受多个客户端连接的socket
+        try {
+            ServerSocket serverSocket = new ServerSocket(1234);
+            while (true) {
+                Thread thread = new Thread(new ServerThread(serverSocket.accept()));
+                thread.start();
+            }
+        }catch (Exception e) {
             e.printStackTrace();
         }
     }
