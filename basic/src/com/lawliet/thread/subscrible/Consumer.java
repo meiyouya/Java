@@ -19,7 +19,7 @@ public class Consumer {
             while (true) {
                 try {
                     Integer data = queue.take();
-                    System.out.println("消费到数据：" + data);
+                    System.out.println(Thread.currentThread().getName() + "消费到数据：" + data);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
