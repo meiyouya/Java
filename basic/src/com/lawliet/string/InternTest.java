@@ -15,7 +15,7 @@ public class InternTest {
         // 由于常量池中已存在"a"，s2会直接指向常量池中的"a"
         String s2 = "a";
         // 通过以上分析，很明显，s1和s2指向的都不是通同一个对象，自然下面的语句是false
-        // 而且，实际上  s1.intern()方法时没有进行任何操作的，所以不执行s1.intern()方法，结果依然是false
+        // 而且，实际上  s1.intern()方法是没有进行任何操作的，所以不执行s1.intern()方法，结果依然是false
         // 但是如果 String s1 = "a"，不使用new，那么结果就是true了，因为不new的话，会直接在常量池中创建一个"a"，然后s1指向它
         System.out.println(s1 == s2);
         // 两个要new的"a"在常量池中已经存在了，所以这里会直接在堆中创建一个"aa"，然后s3指向它
