@@ -58,6 +58,11 @@ public class MyDelayedQueue implements Runnable{
     @Override
     public void run() {
         while (!stop) {
+            // poll方法会移除头部的元素并返回它，队列为空会返回null
+            // 如果需要一定要获取到元素，可以使用take方法，队列为空时会一直阻塞
+            // 如果不想移除，可以使用peek方法，该方法只会返回头部元素而不会删除
+            // 获取元素时，如果有必要，也可以使用element方法，如果队列为空会抛出NoSuchElementException的异常
+            // 同样的，如果在移除时有必要，可以使用remove方法，移除并返回队列头部的元素，如果队列为空会抛出NoSuchElementException的异常
             DelayedItem delayedItem = delayQueue.poll();
             if (delayedItem != null) {
                 // 能获取到，说明元素已过期，执行想要的操作，这里以过期就删除为例
