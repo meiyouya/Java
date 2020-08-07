@@ -14,8 +14,31 @@ public enum OrderDeal {
         return INSTANCE;
     }
 
-    public void handle(OrderDealStrategy strategy, Order order) {
-        strategy.handle(order);
+    private OrderDealStrategy strategy;
+
+    public OrderDeal strategy(OrderDealStrategy strategy) {
+        this.strategy = strategy;
+        return this;
+    }
+
+    /**
+     * 处理订单
+     * @param order 要处理的订单
+     */
+    public void handle(Order order) {
+        this.handle(order, false);
+    }
+
+    /**
+     * 处理订单
+     * @param order 要处理的订单
+     * @param cache 是否要缓存本次的处理策略，默认false
+     */
+    public void handle(Order order, boolean cache) {
+        this.strategy.handle(order);
+        if (!cache) {
+            this.strategy = null;
+        }
     }
 
 }
