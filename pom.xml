@@ -12,11 +12,13 @@
     <artifactId>Java</artifactId>
     <version>1.0.0</version>
     <name>Java</name>
+    <packaging>pom</packaging>
     <description>Java 学习</description>
 
     <modules>
         <module>hutool</module>
         <module>design-pattern</module>
+        <module>basic</module>
     </modules>
 
     <properties>
