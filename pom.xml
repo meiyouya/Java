@@ -19,6 +19,7 @@
         <module>hutool</module>
         <module>design-pattern</module>
         <module>basic</module>
+        <module>java8</module>
     </modules>
 
     <properties>
