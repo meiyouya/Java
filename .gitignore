@@ -1,2 +1,5 @@
 /basic/basic.iml
+*.iml
 .idea/**
+/.idea/
+/out/production/basic/com/lawliet/thread/threadlocal/
