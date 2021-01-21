@@ -1,4 +1,4 @@
-package com.zql.method;
+package com.lawliet.method;
 
 public class VariableNumberArguments {
 

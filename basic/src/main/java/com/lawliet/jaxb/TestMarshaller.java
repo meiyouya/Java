@@ -1,6 +1,5 @@
-package com.zql.jaxb;
+package com.lawliet.jaxb;
 
-import javax.xml.bind.JAXB;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;

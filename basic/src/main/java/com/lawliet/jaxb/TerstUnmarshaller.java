@@ -1,4 +1,4 @@
-package com.zql.jaxb;
+package com.lawliet.jaxb;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

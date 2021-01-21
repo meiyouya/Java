@@ -1,4 +1,4 @@
-package com.zql.jaxb;
+package com.lawliet.jaxb;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
