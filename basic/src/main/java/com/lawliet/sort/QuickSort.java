@@ -8,7 +8,13 @@ import java.util.Arrays;
  */
 public class QuickSort {
 
-    public static void sort(int[] arr, int startIndex, int endIndex) {
+    /**
+     * 指针交换法快速排序
+     * @param arr 要排序的数组
+     * @param startIndex 数组开始索引
+     * @param endIndex 数组结束索引
+     */
+    public static void sortByPointerSwap(int[] arr, int startIndex, int endIndex) {
         if (startIndex >= endIndex || arr == null || arr.length <= 1) {
             return;
         }
@@ -43,14 +49,29 @@ public class QuickSort {
         }
         // 一轮走完，更改基准值，继续下一轮
         // 此时right指针已经移动到left的左边，所以新的endIndex的值就是right的值
-        sort(arr, startIndex, right);;
+        sortByPointerSwap(arr, startIndex, right);
         // 此时left指针已经移动到right的右边，所以新的startIndex的值就是left的值
-        sort(arr, left, endIndex);
+        sortByPointerSwap(arr, left, endIndex);
+    }
+
+    /**
+     * 挖坑法快速排序
+     * @param arr 要排序的数组
+     * @param startIndex 数组开始索引
+     * @param endIndex 数组结束索引
+     */
+    public static void sortByDigPit(int[] arr, int startIndex, int endIndex) {
+        int left = startIndex, right = endIndex, pivotIndex = (startIndex + endIndex) / 2;
+    }
+
+    public static void sort(int[] arr) {
+        sortByPointerSwap(arr, 0, arr.length - 1);
+        sortByDigPit(arr, 0, arr.length - 1);
     }
 
     public static void main(String[] args) {
         int[] arr = {2, 23, 5, 672, 21, 43};
-        sort(arr, 0, arr.length - 1);
+        sort(arr);
         System.out.println(Arrays.toString(arr));
     }
 }
