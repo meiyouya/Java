@@ -8,7 +8,7 @@ import java.lang.reflect.Proxy;
  * 使用JDK动态代理
  * @author dell
  */
-public class JdkDogEatProxy implements InvocationHandler {
+public class JdkEatProxy implements InvocationHandler {
 
     /**
      * 需要代理的目标对象
@@ -27,7 +27,7 @@ public class JdkDogEatProxy implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println("吃骨头之前得先买一个====>JDK");
+        System.out.println("不管你是谁，吃东西之前都得来找我要====>JDK");
         return method.invoke(target, args);
     }
 }
