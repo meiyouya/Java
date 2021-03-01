@@ -1,6 +1,9 @@
 package com.lawliet.design.proxy;
 
 import com.lawliet.design.proxy.jdk.JdkEatProxy;
+import sun.misc.ProxyGenerator;
+
+import java.io.FileOutputStream;
 
 /**
  * @author dell
@@ -21,6 +24,14 @@ public class ProxyTest {
         EatSubject eatEatSubject = (EatSubject) eatProxy.newProxy(new CatEatSubject());
         dogEatSubject.eat();
         eatEatSubject.eat();
+        // 把jdk动态代理生成的代理类导出来看一下
+        byte[] proxyClassFileByte = ProxyGenerator.generateProxyClass("$Proxy0", DogEatSubject.class.getInterfaces());
+        try (FileOutputStream outputStream = new FileOutputStream("E:\\project\\Java\\design-pattern\\target\\classes\\com\\lawliet\\design\\proxy\\jdk\\$Proxy0.class")){
+            outputStream.write(proxyClassFileByte);
+            outputStream.flush();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         // cglib动态代理
 //        CglibDogEatProxy cglibDogEatProxy = new CglibDogEatProxy();
