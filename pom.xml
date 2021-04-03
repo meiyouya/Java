@@ -20,9 +20,11 @@
         <module>design-pattern</module>
         <module>basic</module>
         <module>java8</module>
+        <module>data_structure</module>
     </modules>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
     </properties>
 

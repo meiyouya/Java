@@ -61,7 +61,19 @@ public class QuickSort {
      * @param endIndex 数组结束索引
      */
     public static void sortByDigPit(int[] arr, int startIndex, int endIndex) {
-        int left = startIndex, right = endIndex, pivotIndex = (startIndex + endIndex) / 2;
+        int left = startIndex, right = endIndex, pivotIndex = (startIndex + endIndex) / 2, pivotValue = arr[(startIndex + endIndex) / 2];
+        while (left <= right) {
+            while (left <= right) {
+                if (arr[right] < pivotValue) {
+                    arr[pivotIndex] = arr[right];
+                }
+            }
+            if (arr[left] > arr[pivotIndex]) {
+                int temp = arr[pivotIndex];
+                arr[pivotIndex] = arr[left];
+                arr[left] = temp;
+            }
+        }
     }
 
     public static void sort(int[] arr) {
