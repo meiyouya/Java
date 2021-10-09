@@ -21,6 +21,7 @@
         <module>basic</module>
         <module>java8</module>
         <module>data_structure</module>
+        <module>jvm</module>
     </modules>
 
     <properties>

@@ -1,10 +1,15 @@
-package com.zql.visualvm;/* BTrace Script Template */
+/*
+package com.zql.visualvm;*/
+/* BTrace Script Template *//*
+
 import com.sun.btrace.annotations.*;
 import static com.sun.btrace.BTraceUtils.*;
 
 @BTrace
 public class TracingScript {
-	/* put your code here */
+	*/
+/* put your code here *//*
+
     @OnMethod(
         clazz="com.zql.visualvm.BTraceTest",
         method="add",
@@ -17,4 +22,4 @@ public class TracingScript {
         println(strcat("方法参数b：", str(b)));
         println(strcat("方法结果：", str(result)));
     }
-}
+}*/
