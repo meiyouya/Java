@@ -10,6 +10,7 @@ public class MyRedisClient {
     private Socket socket;
     private OutputStream outputStream;
     private InputStream inputStream;
+    final String lineSeparator = System.lineSeparator();
 
     public MyRedisClient(String host, int port) {
         try {
@@ -23,7 +24,6 @@ public class MyRedisClient {
 
     public String auth(String password) {
         final StringBuilder sb = new StringBuilder();
-        final String lineSeparator = System.lineSeparator();
         sb.append("*2").append(lineSeparator)
                 .append("$4").append(lineSeparator)
                 .append("AUTH").append(lineSeparator)
@@ -34,7 +34,6 @@ public class MyRedisClient {
 
     public String set(final String key, String value) {
         final StringBuilder sb = new StringBuilder();
-        final String lineSeparator = System.lineSeparator();
         sb.append("*3").append(lineSeparator)
                 .append("$3").append(lineSeparator)
                 .append("SET").append(lineSeparator)
@@ -42,6 +41,16 @@ public class MyRedisClient {
                 .append(key).append(lineSeparator)
                 .append("$").append(value.length()).append(lineSeparator)
                 .append(value).append(lineSeparator);
+        return sendCommand(sb.toString());
+    }
+
+    public String get(String key) {
+        final StringBuilder sb = new StringBuilder();
+        sb.append("*2").append(lineSeparator)
+                .append("$3").append(lineSeparator)
+                .append("GET").append(lineSeparator)
+                .append("$").append(key.length()).append(lineSeparator)
+                .append(key).append(lineSeparator);
         return sendCommand(sb.toString());
     }
 
@@ -62,5 +71,7 @@ public class MyRedisClient {
         System.out.println(auth);
         final String result = client.set("a", "b");
         System.out.println(result);
+        final String a = client.get("a");
+        System.out.println(a);
     }
 }
