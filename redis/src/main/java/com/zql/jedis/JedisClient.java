@@ -9,7 +9,8 @@ import java.util.Set;
 public class JedisClient {
 
     public static void main(String[] args) {
-        Jedis jedis = new Jedis("39.108.92.8", 6379);
+        Jedis jedis = new Jedis("192.168.174.188", 6379);
+        jedis.auth("lawliet");
         System.out.println(jedis.ping());
 
         jedis.set("stringkey","stringvalue");
